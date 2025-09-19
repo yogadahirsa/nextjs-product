@@ -39,9 +39,11 @@ export default async function Page(props: {
   
   return (
     <>
-      <Select data={category} />
-      <Sort />
-      <Table data={products} />
+      <div className="m-3 p-3">
+        <Select data={category} />
+        <Sort />
+        <Table data={products} />
+      </div>
     </>
   );
 }

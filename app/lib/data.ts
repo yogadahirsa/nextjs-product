@@ -41,3 +41,10 @@ export async function sortData(sortBy: string, products: Producttype[]) {
     return sorted;
 }
 
+export async function fetchSingleProduct(id: number) {
+    const url = `https://dummyjson.com/products/${id}`;
+    const response = await fetch(url);
+    const data = response.json();
+
+    return data;
+} 
